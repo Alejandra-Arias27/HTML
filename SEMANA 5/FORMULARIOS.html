@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title>
+    <link rel="stylesheet" href="CSS/ESTILOS_FORMULARIO.css">
+
+</head>
+<body style="background-color:rgb(212, 164, 164);">
+    <header>
+        <img src="IMG/incap_blanco-removebg-preview.png" width="100" height="100" alt="INCAP">
+        <h1 style="color:rgb(99, 23, 99);">Listas en html</h1>
+    </header>
+    <nav>
+        <ul>
+            <li type="disc" style=" color: white;">HOME</li>
+            <li type="square" style=" color:white;">PRODUCTO</li>
+            <li type="circle" style=" color:white;">SERVICIOS</li>
+            <li style=" color:white;">CONTACTO</li>
+        </ul>
+    </nav>
+    <section>
+        <form action="datos.php" method="post">
+        <fieldset>
+            <label style=" color:purple;"><b>Nombre completo</b></label><br>
+            <input name="Nombre" type="text" placeholder="Ingrese su nombre completo" required="">
+            <br><br>
+
+            <label style=" color:purple;"><b>Email</b></label><br>
+            <input name="Email" type="email" placeholder="Ingrese su email" required="">
+            <br><br>
+
+            <label style=" color:purple;"><b>Contraseña</b></label><br>
+            <input name="Contraseña" type="password" placeholder="Ingrese su Contraseña" required="">
+            <br><br>
+
+            <label style="color:purple ;"><b>Selecciona tus hobbies:</b></label>
+            <br>
+            <hr>
+            <input name="Cine"  type="checkbox">Cine<br>
+            <input name="Lectura" type="checkbox">Lectura<br>
+            <input name="Deporte" type="checkbox">Deporte<br>
+            <input name="Musica" type="checkbox">Musica<br>
+            <input name="Videojuegos" type="checkbox">Videojuegos<br>
+            <input name="Pintura" type="checkbox">Pintura<br>
+            <br>
+            <hr>
+            <label style="color:purple;"><b>Estado Civil</b></label><br>
+            <input name="Estcivil" type="radio" value="Casado">Casado<br>
+            <input name="Estcivil" type="radio" value="Soltero">Soltero<br>
+            <input name="Estcivil" type="radio" value="Viudo">Viudo<br>
+            <input name="Estcivil" type="radio" value="Unión libre">Unión libre<br>
+            <input name="Estcivil" type="radio" value="No sabe, no responde">No sabe, no responde<br>
+            <br><br>
+            <hr>
+            <label style="color:purple;"><b>Edad</b></label><br>
+            <input name='edad' type='checkbox' tabindex='20'  value='18-27'>18-27<br>
+            <input name='edad' type='checkbox' tabindex='20'  value='28-36'>28-36<br>
+            <input name='edad' type='checkbox' tabindex='20'  value='37-45'>37-45<br>
+            <input name='edad' type='checkbox' tabindex='20'  value='46-55'>46-55<br>
+            <br><br>
+
+            <label style="color:purple;"><b>Programas técnicos</b></label><br>
+            <select name="Select">
+                <option>Seleccione una opción.</option>
+                <option>Sistemas</option>
+                <option>Contabilidad</option>
+                <option>Diseño gráfico</option>
+                <option>Gastronomía</option>
+                <option>Arquitectura</option>
+            </select>
+            <br>
+            <br>
+            <label style="color:purple;"><b>Tu comentario:</b></label><br>
+            <textarea name="Mensaje" rows="10" cols="40"></textarea>
+        </fieldset>
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+        <br><br>
+        </form>
+    </section>
+    <footer>
+        Derechos reservados &copy;2022 &#64;A3Rubio
+    </footer>
+</body>
+</html>
