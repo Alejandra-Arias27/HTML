@@ -1,0 +1,43 @@
+body {
+
+    margin-top: 100px;
+    font-family: 'Pacifico', cursive;
+    background-image:url(../IMG/fondo.jpg) ;
+    background-size:contain;
+    /* font-family: Roman SD ; */
+    /* @font-face {
+    font-family: Roman SD;
+    src: url(../FONTS/Roman\ SD.ttf); */  
+    }
+    
+    .navbar-brand {
+    
+    
+    font-size: 20px;
+    
+    font-weight: bold;
+    
+    }    
+    #testimonial {
+    
+    
+    
+    padding: 50px 0 30px 0;
+    
+    text-align:center;
+    
+    margin-top: 40px;
+    
+    }
+    
+    #contact {
+    
+    display: flex;
+    
+    flex-direction: row;
+    
+    justify-content:space-around ;
+    
+    flex-wrap: wrap;
+    
+    }
